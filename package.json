@@ -1,0 +1,26 @@
+{
+  "name": "GraphQL-Server",
+  "description": "Weather and Shopping REST API with GraphQL",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pySoo/GraphQL-Server.git",
+  "author": "pySoo <soopy368@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "apollo-server": "^3.12.1",
+    "dotenv": "^16.3.1",
+    "graphql": "^16.8.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-node": "^11.1.0",
+    "prettier": "^3.0.3"
+  }
+}
