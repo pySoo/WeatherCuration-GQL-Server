@@ -7,7 +7,7 @@ export const getShoppingList = (keyword) => {
     throw new Error('키워드를 입력해 주세요.');
   }
 
-  return fetch(`${API_URL}?query=${keyword}&display=5`, {
+  return fetch(`${API_URL}?query=${keyword}&display=8`, {
     method: 'get',
     headers: {
       'X-Naver-Client-Id': process.env.API_CLIENT_ID,
