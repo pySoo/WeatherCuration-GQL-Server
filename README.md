@@ -1,10 +1,12 @@
 # Weather Curation QraphQL API Server
 
-REST API와 GraphQL 서버를 연동하여 클라이언트가 필요로 하는 데이터만 로드할 수 있도록 설계하였습니다.
+REST API와 GraphQL 서버를 연동하여 **클라이언트가 필요로 하는 데이터만 로드할 수 있도록 설계**하였습니다.
 
-배포 이후 CORS 에러 상황을 겪으면서, apollo server 단독 사용에서 express middleware 사용으로 구조를 변경하여 CORS를 해결하였습니다.
+배포 이후 CORS 에러 상황을 겪으면서, apollo server 단독 사용에서 express middleware 사용으로 구조를 변경하여 **CORS를 해결**하였습니다.
 
-## Tech Stack
+<br />
+
+## 🛠️ Tech Stack
 
 <div align=center>
 
@@ -14,14 +16,18 @@ REST API와 GraphQL 서버를 연동하여 클라이언트가 필요로 하는 �
 
 </div>
 
-## Features
+<br />
+
+## ✨ Features
 
 - 네이버 검색 쇼핑 API, Accuweather API 사용
-- Accuweather API의 경우 파라미터가 50개 이상인 응답도 있었기 때문에 GQL 쿼리를 이용하여 작은 용량의 데이터를 로드할 수 있다는 장점이 있었습니다.
-- GitHub Actions를 활용해 배포 자동화
+- Accuweather API의 경우 필드가 50개 이상인 응답의 **Overfetching을 해결하고 작은 용량의 데이터를 로드**하여 **API 통신 속도를 개선**할 수 있었습니다.
+- GitHub Actions를 활용해 **배포 자동화**
 - Heroku sleep 방지를 위한 Kaffeine 설정
 
-## Project Structure
+<br />
+
+## 📦 Project Structure
 
 ```
 📦
@@ -38,7 +44,9 @@ REST API와 GraphQL 서버를 연동하여 클라이언트가 필요로 하는 �
 └── index.mjs
 ```
 
-## Getting Started
+<br />
+
+## 🚀 Getting Started
 
 ```bash
 npm install
